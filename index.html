@@ -8,7 +8,7 @@
 </head>
 <body>
     <main>
-        <section id="Login">
+        <section id="login">
             <div id="imagem">
 
             </div>
@@ -17,7 +17,19 @@
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente. </p>
                 <form action="login.php" method="post">
-                    
+                    <p>
+                        <label for="iemail">Email</label>
+                        <input type="email" name="email" id="iemail" placeholder="seu e-mail" required>
+                    </p>
+
+                    <p>
+                        <label for="isenha">Senha</label>
+                        <input type="password" name="senha" id="isenha" placeholder="sua senha" required minlength="8" maxlength="15">
+                    </p>
+
+                    <p>
+                        <input type="submit" value="entrar">
+                    </p>
                 </form>
             </div>
         </section>
